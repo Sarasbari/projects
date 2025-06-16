@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joke Teller</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    #joke {
+      padding: 12px 25px;
+      font-size: 18px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #joke:hover {
+      background-color: #555;
+      transform: scale(1.05);
+    }
+
+    #joke-box {
+      margin-top: 30px;
+      background: white;
+      padding: 30px 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #setup, #punchline {
+      font-size: 20px;
+      color: #444;
+      margin: 15px 0;
+    }
+
+    #punchline {
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click on the button to see a joke</h2>
+  <div>
+    <button id="joke">Tell me a joke</button>
+  </div>
+
+  <!-- Joke container -->
+  <div id="joke-box" style="display: none;">
+    <p id="setup"></p>
+    <p id="punchline"></p>
+  </div>
+
+  <script src="working.js"></script>
+</body>
+</html>
