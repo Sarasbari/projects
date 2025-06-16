@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(145deg, #ececec, #f5f5f5);
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background: linear-gradient(to right, #6e8efb, #a777e3);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Container Styling */
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #d1d1d1, -10px -10px 30px #ffffff;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Label and Input Fields */
+form p {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #f0f0f0;
+  box-shadow: inset 3px 3px 6px #dcdcdc, inset -3px -3px 6px #ffffff;
+}
+
+/* Button */
+button {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Results */
+#results {
+  font-size: 24px;
+  color: gold;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#results p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: gold;
+  align-items:center ;
+  display: flex;
+}
+
+/* BMI Guide */
+#weight-guide {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+}
+
+#weight-guide h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
