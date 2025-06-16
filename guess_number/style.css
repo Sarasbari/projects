@@ -1,0 +1,141 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f4f8;
+  height:100vh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #0d47a1;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 2px solid #0b3c91;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+
+#wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  width: 450px;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  color: #212121;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  background-color: #1976d2;
+  color: #ffffff;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+#guess {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #0d47a1;
+}
+
+#guessField {
+  color: #212121;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 3px solid #90caf9;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+#subt {
+  background-color: #1976d2;
+  color: #ffffff;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#subt:hover {
+  background-color: #1565c0;
+}
+
+button {
+  background-color: #0288d1;
+  color: #ffffff;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0277bd;
+}
+
+.lastResult,
+.guesses {
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #f5fffa;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  color: #1b5e20;
+  font-weight: bold;
+}
